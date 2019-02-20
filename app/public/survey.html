@@ -246,8 +246,6 @@
         event.preventDefault();
         validateForm();
         if (validateForm()) {
-          $("#name").val("");
-          $("#photoLink").val("");
           var newFriend = {
             friendName: $("#name")
               .val()
@@ -269,6 +267,8 @@
             ],
             friendTotal: 0
           };
+          $("#name").val("");
+          $("#photoLink").val("");
           var total = 0;
           for (var prop in newFriend.friendAnswers) {
             rawValue = newFriend.friendAnswers[prop];
