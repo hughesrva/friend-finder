@@ -1,13 +1,15 @@
 var express = require("express");
-var path = require("path");
-var $ = require("jquery");
-
+var cors = require("cors");
 var app = express();
 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
+app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('routing'));
+app.use(express.static('public'));
+
 
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);

@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>FriendFinder - Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
     />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <section class="section">
@@ -26,180 +25,192 @@
         <div class="field">
           <label class="label">Name (required)</label>
           <div class="control">
-            <input class="input" type="text" placeholder="Text input" />
+            <input
+              class="input"
+              type="text"
+              placeholder="Text input"
+              id="name"
+            />
           </div>
         </div>
         <div class="field">
           <label class="label">Link to Photo (required)</label>
           <div class="control">
-            <input class="input" type="text" placeholder="Text input" />
+            <input
+              class="input"
+              type="text"
+              placeholder="Text input"
+              id="photoLink"
+            />
           </div>
         </div>
         <hr />
         <!-- question section -->
         <h2 class="subtitle"><strong>Question 1</strong></h2>
         <div class="field">
-          <label class="label">Question 1</label>
+          <label class="label"
+            >Your mind is always buzzing with unexplored ideas and plans.
+          </label>
           <div class="control">
-            <div class="select">
-              <select>
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
-              </select>
-            </div>
+            <select class="select" id="q1">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option selected value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
           </div>
         </div>
         <hr />
         <h2 class="subtitle"><strong>Question 2</strong></h2>
         <div class="field">
-          <label class="label">Question 2</label>
+          <label class="label"
+            >Generally speaking, you rely more on your experience than your
+            imagination.
+          </label>
           <div class="control">
-            <div class="select">
-              <select>
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
-              </select>
-            </div>
+            <select class="select" id="q2">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option selected value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
           </div>
         </div>
         <hr />
         <h2 class="subtitle"><strong>Question 3</strong></h2>
         <div class="field">
-          <label class="label">Question 3</label>
+          <label class="label"
+            >You find it easy to stay relaxed and focused even when there is
+            some pressure.
+          </label>
           <div class="control">
-            <div class="select">
-              <select>
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
-              </select>
-            </div>
+            <select class="select" id="q3">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option selected value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
           </div>
         </div>
         <hr />
         <h2 class="subtitle"><strong>Question 4</strong></h2>
         <div class="field">
-          <label class="label">Question 4</label>
+          <label class="label"
+            >You rarely do something just out of sheer curiosity.
+          </label>
           <div class="control">
-            <div class="select">
-              <select>
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
-              </select>
-            </div>
+            <select class="select" id="q4">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option selected value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
           </div>
         </div>
         <hr />
 
         <h2 class="subtitle"><strong>Question 5</strong></h2>
         <div class="field">
-          <label class="label">Question 5</label>
+          <label class="label">People can rarely upset you. </label>
           <div class="control">
-            <div class="select">
-              <select>
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
-              </select>
-            </div>
+            <select class="select" id="q5">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option selected value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
           </div>
         </div>
         <hr />
 
         <h2 class="subtitle"><strong>Question 6</strong></h2>
         <div class="field">
-          <label class="label">Question 6</label>
+          <label class="label"
+            >It is often difficult for you to relate to other people’s feelings.
+          </label>
           <div class="control">
-            <div class="select">
-              <select>
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
-              </select>
-            </div>
+            <select class="select" id="q6">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option selected value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
           </div>
         </div>
         <hr />
 
         <h2 class="subtitle"><strong>Question 7</strong></h2>
         <div class="field">
-          <label class="label">Question 7</label>
+          <label class="label"
+            >In a discussion, truth should be more important than people’s
+            sensitivities.
+          </label>
           <div class="control">
-            <div class="select">
-              <select>
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
-              </select>
-            </div>
+            <select class="select" id="q7">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option selected value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
           </div>
         </div>
         <hr />
 
         <h2 class="subtitle"><strong>Question 8</strong></h2>
         <div class="field">
-          <label class="label">Question 8</label>
+          <label class="label"
+            >You rarely get carried away by fantasies and ideas.
+          </label>
           <div class="control">
-            <div class="select">
-              <select>
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
-              </select>
-            </div>
+            <select class="select" id="q8">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option selected value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
           </div>
         </div>
         <hr />
 
         <h2 class="subtitle"><strong>Question 9</strong></h2>
         <div class="field">
-          <label class="label">Question 9</label>
+          <label class="label"
+            >You think that everyone’s views should be respected regardless of
+            whether they are supported by facts or not.
+          </label>
           <div class="control">
-            <div class="select">
-              <select>
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
-              </select>
-            </div>
+            <select class="select" id="q9">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option selected value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
           </div>
         </div>
         <hr />
 
         <h2 class="subtitle"><strong>Question 10</strong></h2>
         <div class="field">
-          <label class="label">Question 10</label>
+          <label class="label"
+            >You feel more energetic after spending time with a group of people.
+          </label>
           <div class="control">
-            <div class="select">
-              <select>
-                <option>1 (Strongly Disagree)</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 (Strongly Agree)</option>
-              </select>
-            </div>
+            <select class="select" id="q10">
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option selected value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
           </div>
         </div>
         <button class="button is-primary" id="submitBtn">Submit</button>
@@ -208,10 +219,120 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          API Friends List |
+          <a href="/api/friends">API Friends List</a> |
           <a href="https://github.com/hughesrva/friend-finder">GitHub Repo</a>
         </p>
       </div>
     </footer>
+
+    <div class="modal" id="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box" id="modalBox"></div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <script type="text/javascript">
+      function validateForm() {
+        if ($("#name").val() === "") {
+          return false;
+        } else if ($("#photoLink").val() === "") {
+          return false;
+        } else return true;
+      }
+
+      $("#submitBtn").on("click", function(event) {
+        event.preventDefault();
+        validateForm();
+        if (validateForm()) {
+          $("#name").val("");
+          $("#photoLink").val("");
+          var newFriend = {
+            friendName: $("#name")
+              .val()
+              .trim(),
+            friendPhoto: $("#photoLink")
+              .val()
+              .trim(),
+            friendAnswers: [
+              $("#q1").val(),
+              $("#q2").val(),
+              $("#q3").val(),
+              $("#q4").val(),
+              $("#q5").val(),
+              $("#q6").val(),
+              $("#q7").val(),
+              $("#q8").val(),
+              $("#q9").val(),
+              $("#q10").val()
+            ],
+            friendTotal: 0
+          };
+          var total = 0;
+          for (var prop in newFriend.friendAnswers) {
+            rawValue = newFriend.friendAnswers[prop];
+            value = parseInt(rawValue);
+            total += value;
+          }
+          newFriend.friendTotal = total;
+          console.log("New entry:" + newFriend);
+
+          // query to get existing friend records and compare them to new entry
+          function runFriendQuery(newEntry) {
+            $.ajax({ url: "/api/friends", method: "GET" }).then(function(
+              friendData
+            ) {
+              var diffArray = [];
+              for (var i = 0; i < friendData.length - 1; i++) {
+                var difference = Math.abs(
+                  newEntry.friendTotal - friendData[i].friendTotal
+                );
+                friendData[i].friendDiff = difference;
+                diffArray.push(difference);
+              }
+
+              var selectedDiff = Math.min(...diffArray);
+              for (var i = 0; i < friendData.length - 1; i++) {
+                if (friendData[i].friendDiff === selectedDiff) {
+                  var chosenFriend = friendData[i].friendName;
+                  $("#modalBox").empty();
+                  $("#modalBox").append(
+                    "<div class='content' id='modalText'</div>"
+                  );
+                  $("#modalText").append(
+                    "<h1 class='title'>Your new best friend is " +
+                      chosenFriend +
+                      "!</h1>"
+                  );
+                  $("#modalBox").append(
+                    "<img src=" + friendData[i].friendPhoto + ">"
+                  );
+                  $("#modal").addClass("is-active");
+                }
+              }
+            });
+          }
+          runFriendQuery(newFriend);
+
+          // pushes new entry data to API
+          $.post("/api/friends", newFriend, function(data) {
+            if (data) {
+              alert("There was data!");
+            } else {
+              alert("No data");
+            }
+          });
+        }
+      });
+
+      $(".modal-close").on("click", function() {
+        $("#modal").removeClass("is-active");
+      });
+    </script>
   </body>
 </html>
+
+<!-- set object value for total score -->
+<!-- create logic to compare new score to other objects' scores -->
+<!-- show modal with name of person with most similar score -->
